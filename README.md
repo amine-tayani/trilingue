@@ -8,8 +8,6 @@ git clone https://github.com/amine-tayani/trilingue.git
 
 and then change directory where package.json reside.
 
-## Usage
-
 Install packages by running this command :
 
 ```bash
