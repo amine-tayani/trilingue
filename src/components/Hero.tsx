@@ -9,14 +9,17 @@ const Hero = () => {
               "url(src/assets/hero/hero-gradient-background.svg)",
           }}
         >
-          <div className="flex justify-center">
-            <div className="flex mx-auto mt-8">
+          <div className="flex justify-center mx-12">
+            <div className="flex items-baseline mx-auto mt-8">
               <img
                 className="h-96 lg:h-[500px]"
                 src="src/assets/hero/left-leaf.svg"
               />
-              <h1 className="text-white self-end text-5xl font-semibold">
-                DE LA <span className="text-yellow-500">MATERNELLE</span>
+              <h1 className="text-white font-light text-nowrap text-5xl font-monstserrat">
+                DE LA{" "}
+                <span className="text-yellow-500 font-semibold">
+                  MATERNELLE
+                </span>
               </h1>
             </div>
             <div className="mx-auto">
@@ -26,8 +29,11 @@ const Hero = () => {
               />
             </div>
             <div className="flex mx-auto mt-8">
-              <h1 className="text-white text-5xl font-montserrat font-semibold">
-                JUSQU'AU <span className="text-yellow-500">LYC&Eacute;E</span>
+              <h1 className="text-white font-light tracking-wide text-nowrap text-5xl font-montserrat">
+                JUSQU'AU{" "}
+                <span className="text-yellow-500  font-semibold">
+                  LYC&Eacute;E
+                </span>
               </h1>
               <img
                 className="h-96 lg:h-[500px]"
@@ -38,14 +44,20 @@ const Hero = () => {
         </div>
       </section>
       <section>
-        <div className="relative flex justify-center">
-          <h1 className="mt-2 text-gray-900 text-center text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
+        <div className="relative flex flex-col items-center justify-center">
+          <h1 className="mt-2 font-poppins text-[#002157] text-center text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
             BIENVENUE &Agrave;
-            <br /> JEANNE D'ARC
-            <span className="text-yellow-500"> TRILINGUE</span> SCHOOL
+            <br /> JEANNE D'ARC{" "}
+            <span className="bg-[#fdc725] leading-relaxed text-white">
+              TRILINGUE
+            </span>{" "}
+            SCHOOL
           </h1>
+          <h2 className="text-6xl font-meowscript text-[#073d6a]">
+            La quête de l'excellence
+          </h2>
+          <div className="bg-[#073d6a] h-2 w-[106px] my-4" />
         </div>
-        <h1></h1>
       </section>
     </>
   );
