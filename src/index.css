@@ -8,4 +8,19 @@
     font-weight: 500;
     src: url(/src/assets/LEMONMILK-Medium.otf) format("otf");
   }
+
+  body {
+    background-color: white;
+  }
+
+  .pattern-container {
+    height: 1200px; /* Adjust the height as needed */
+  }
+
+  .bg-pattern {
+    background-image: url("/src/assets/pattern.png");
+    background-size: contain; /* Ensure the background image is contained */
+    background-repeat: no-repeat; /* Prevent repetition */
+    min-height: 100%;
+  }
 }
