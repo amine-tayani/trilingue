@@ -53,7 +53,7 @@ const Hero = () => {
             </span>{" "}
             SCHOOL
           </h1>
-          <h2 className="text-6xl font-meowscript text-[#073d6a]">
+          <h2 className="text-6xl font-meowscript text-title">
             La quête de l'excellence
           </h2>
           <div className="bg-[#073d6a] h-2 w-[106px] my-4" />

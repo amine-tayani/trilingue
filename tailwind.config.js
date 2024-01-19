@@ -3,6 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        title: "#073d6a",
+        footer: "#032a4b",
+        fyellow: "#f0c30f",
+      },
       fontFamily: {
         monstserrat: ["Montserrat", "sans-serif"],
         meowscript: ["Meow Script", "cursive"],

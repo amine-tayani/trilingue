@@ -1,11 +1,12 @@
-import Enseignement from "./components/Enseignement";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import MaCharte from "./components/MaCharte";
-import MotDeDirecteur from "./components/MotDirecteur";
-import Navbar from "./components/Navbar";
-import NosCycles from "./components/NosCycles";
-import VieScolaireSection from "./components/VieScolaireSection";
+import Enseignement from "./components/sections/Enseignement";
+import Footer from "./components/sections/Footer";
+import Hero from "./components/sections/Hero";
+import MaCharte from "./components/sections/MaCharte";
+import MotDeDirecteur from "./components/sections/MotDirecteur";
+import Navbar from "./components/shared/Navbar";
+import NosCycles from "./components/sections/NosCycles";
+import VieScolaireSection from "./components/sections/VieScolaireSection";
+import Raisons from "./components/sections/Raisons";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
       <Hero />
       <MotDeDirecteur />
       <MaCharte />
-      <NosCycles />
       <Enseignement />
+      <Raisons />
+      <NosCycles />
       <VieScolaireSection />
       <Footer />
     </>
