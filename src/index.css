@@ -23,23 +23,4 @@
     background-repeat: no-repeat; /* Prevent repetition */
     min-height: 100%;
   }
-
-  .wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-
-  .wave svg {
-    position: relative;
-    display: block;
-    width: calc(165% + 1.3px);
-  }
-  .wave .shape-fill {
-    fill: #f0c30f;
-  }
 }

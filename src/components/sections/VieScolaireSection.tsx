@@ -67,14 +67,13 @@ const VieScolaireSection = () => {
     <section className="mb-20 mt-7">
       <div className="relative w-full h-20 bg-[rgb(227,185,33)] flex items-center justify-around mb-10">
         <img
-          className="absolute left-1/4  transform -translate-x-1/2 -rotate-[80deg] overflow-hidden"
+          className="absolute left-1/4 transform -translate-x-1/2 -rotate-[80deg] overflow-hidden"
           src="src/assets/hero/left-leaf.svg"
         />
         <h1 className="font-monstserrat text-white text-2xl font-bold tracking-wide sm:text-3xl md:text-4xl lg:text-5xl">
           VIE SCOLAIRE
         </h1>
       </div>
-
       <Carousel
         responsive={responsive}
         autoPlay={true}

@@ -6,18 +6,11 @@ const Navbar = () => {
           <a href="/" className="flex items-center">
             <img src="/src/assets/logo-trilingue.svg" alt="trilingue logo" />
           </a>
-          <div className="flex items-center lg:order-2">
-            <a
-              href="#"
-              className="text-white text-xl font-medium rounded px-4 lg:px-2 py-2 lg:py-3.5 mr-2 bg-yellow-500 focus:outline-none hover:bg-yellow-400"
-            >
-              Insriptions
-            </a>
-
+          <div className="flex items-center">
             <button
               data-collapse-toggle="mobile-menu-2"
               type="button"
-              className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 ml-1 text-sm text-neutral-900 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none"
               aria-controls="mobile-menu-2"
               aria-expanded="false"
             >
@@ -52,11 +45,11 @@ const Navbar = () => {
             className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
             id="mobile-menu-2"
           >
-            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+            <ul className="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 rounded text-blue-950 lg:p-0 "
+                  className="block py-2 pr-4 pl-3 rounded text-footer lg:p-0  font-medium "
                   aria-current="page"
                 >
                   Accueil
@@ -65,7 +58,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 rounded text-blue-950 lg:p-0 "
+                  className="block py-2 pr-4 pl-3 rounded text-footer lg:p-0 font-medium "
                 >
                   Notre &#201;cole
                 </a>
@@ -73,7 +66,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 rounded text-blue-950 lg:p-0 "
+                  className="block py-2 pr-4 pl-3 rounded text-white bg-fyellow lg:p-0.5 "
                 >
                   Acad&#233;mique
                 </a>
@@ -81,7 +74,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 rounded text-blue-950 lg:p-0 "
+                  className="block py-2 pr-4 pl-3 rounded text-footer lg:p-0 font-medium "
                 >
                   Admissions
                 </a>
@@ -89,7 +82,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 rounded text-blue-950 lg:p-0 "
+                  className="block py-2 pr-4 pl-3 rounded text-footer lg:p-0 font-medium "
                 >
                   Vie Scolaire
                 </a>
@@ -97,7 +90,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 rounded text-blue-950 lg:p-0 "
+                  className="block py-2 pr-4 pl-3 rounded text-footer lg:p-0 font-medium "
                 >
                   Actualit&#233;es
                 </a>
@@ -105,9 +98,17 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 rounded text-blue-950 lg:p-0 "
+                  className="block py-2 pr-4 pl-3 rounded text-footer lg:p-0 font-medium "
                 >
                   Contactez nous
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-white text-xl font-medium rounded px-4 lg:px-2 py-2 lg:py-3.5 mr-2 bg-fyellow focus:outline-none hover:bg-yellow-400"
+                >
+                  Insriptions
                 </a>
               </li>
             </ul>
