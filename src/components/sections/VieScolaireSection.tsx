@@ -23,53 +23,49 @@ const images = [
   {
     url: "/src/assets/faces/cal-1.png",
     alt: "cal-1",
-    title: "",
+    title: "Activités sportives",
   },
   {
     url: "/src/assets/faces/cal-2.png",
     alt: "cal-2",
-    title: "",
+    title: "Activités Culturels",
   },
   {
     url: "/src/assets/faces/cal-3.png",
     alt: "cal-3",
-    title: "",
+    title: "Activités Extrascolaires",
   },
   {
     url: "/src/assets/faces/cal-4.png",
     alt: "cal-4",
-    title: "",
+    title: "Activités Sociales",
   },
   {
     url: "/src/assets/faces/cal-5.png",
     alt: "cal-5",
-    title: "",
+    title: "Sorties scolaires",
   },
   {
     url: "/src/assets/faces/cal-6.png",
     alt: "cal-6",
-    title: "",
+    title: "Voyage A L'Etranger",
   },
   {
     url: "/src/assets/faces/cal-7.png",
     alt: "cal-7",
-    title: "",
+    title: "Summer Camp",
   },
   {
     url: "/src/assets/faces/cal-8.png",
     alt: "cal-8",
-    title: "",
+    title: "ROBOTIQUE",
   },
 ];
 
 const VieScolaireSection = () => {
   return (
     <section className="mb-20 mt-7">
-      <div className="relative w-full h-20 bg-[rgb(227,185,33)] flex items-center justify-around mb-10">
-        <img
-          className="absolute left-1/4 transform -translate-x-1/2 -rotate-[80deg] overflow-hidden"
-          src="src/assets/hero/left-leaf.svg"
-        />
+      <div className="relative w-full h-20  bg-[rgb(227,185,33)] flex items-center justify-around mb-10">
         <h1 className="font-monstserrat text-white text-2xl font-bold tracking-wide sm:text-3xl md:text-4xl lg:text-5xl">
           VIE SCOLAIRE
         </h1>
@@ -95,8 +91,8 @@ const VieScolaireSection = () => {
                 alt={image.alt}
                 className=" object-cover object-center"
               />
-              <div className="w-full absolute bottom-10 p-4">
-                <h2 className="font-semibold text-left text-5xl text-white font-lemonmilk">
+              <div className="w-full z-50 absolute bottom-10 p-4">
+                <h2 className="font-semibold text-left text-5xl text-white font-lemonmilk uppercase">
                   {image.title}
                 </h2>
               </div>

@@ -7,6 +7,7 @@ export default {
         title: "#073d6a",
         footer: "#032a4b",
         fyellow: "#f0c30f",
+        hero: "#f3cc17",
       },
       fontFamily: {
         monstserrat: ["Montserrat", "sans-serif"],

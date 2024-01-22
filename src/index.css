@@ -10,17 +10,20 @@
   }
 
   body {
-    background-color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
   }
 
-  .pattern-container {
-    height: 1200px; /* Adjust the height as needed */
+  .title-left {
+    position: absolute;
+    bottom: 100px;
+    left: 220px;
   }
 
-  .bg-pattern {
-    background-image: url("/src/assets/pattern.png");
-    background-size: contain; /* Ensure the background image is contained */
-    background-repeat: no-repeat; /* Prevent repetition */
-    min-height: 100%;
+  .title-right {
+    position: absolute;
+    top: 350px;
+    right: 180px;
   }
 }
