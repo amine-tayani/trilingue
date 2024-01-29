@@ -1,127 +1,178 @@
-import Footer from "../sections/Footer";
-import { cn } from "../../utils/cn";
-import { NavLink } from "react-router-dom";
-
 const Admission = () => {
-  const menuItems = [
-    {
-      id: 1,
-      slug: "home",
-      path: "/",
-    },
-    {
-      id: 2,
-      slug: "Our School",
-      path: "/school",
-    },
-    {
-      id: 3,
-      slug: "Learning",
-      path: "/learning",
-    },
-    {
-      id: 4,
-      slug: "Admissions",
-      path: "/admissions",
-    },
-    {
-      id: 5,
-      slug: "School Life",
-      path: "/school-life",
-    },
-    {
-      id: 6,
-      slug: "News & Events",
-      path: "/news",
-    },
-    {
-      id: 7,
-      slug: "Contact Us",
-      path: "/contact",
-    },
-  ];
-
   return (
     <div>
-      <header>
-        <nav className=" py-4 font-monstserrat">
-          <div className="flex flex-wrap justify-around items-center mx-3 max-w-screen-2xl">
-            <a href="/" className="flex items-center">
-              <img src="/src/assets/logo-trilingue.svg" alt="trilingue logo" />
-            </a>
-            <div className="flex items-center">
-              <button
-                data-collapse-toggle="mobile-menu-2"
-                type="button"
-                className="inline-flex items-center p-2 ml-1 text-sm text-neutral-900 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none"
-                aria-controls="mobile-menu-2"
-                aria-expanded="false"
-              >
-                <span className="sr-only">Open main menu</span>
-                <svg
-                  className="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <svg
-                  className="hidden w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div
-              className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
-              id="mobile-menu-2"
-            >
-              <ul className="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
-                {menuItems.map((item) => (
-                  <li key={item.id}>
-                    <NavLink
-                      to={item.path}
-                      className={({ isActive }) =>
-                        cn(
-                          "block py-2 pr-4 pl-3 rounded text-footer lg:p-0 font-medium",
-                          {
-                            "bg-red-600 rounded-lg text-white": isActive,
-                          }
-                        )
-                      }
-                    >
-                      {item.slug}
-                    </NavLink>
-                  </li>
-                ))}
-                <li>
-                  <a
-                    href="#"
-                    className="text-white text-xl font-medium rounded px-4 lg:px-2 py-2 lg:py-3.5 mr-2 bg-fyellow focus:outline-none hover:bg-yellow-400"
-                  >
-                    Enroll Now
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <Footer />
+      <AdmissionForm />
     </div>
   );
 };
 
 export default Admission;
+
+export const AdmissionForm = () => {
+  return (
+    <div
+      id="contact-us"
+      className="overflow-hidden bg-[#f0f1f5] py-16 px-4 sm:px-6 lg:px-8 lg:pt-24"
+    >
+      <div className="flex flex-col max-w-3xl lg:max-w-full lg:px-20 justify-center mx-auto ">
+        <div className="text-center">
+          <div className="flex items-center md:max-w-3xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl uppercase font-medium font-oswald text-[#cc1522] ">
+              become part of the team at jeanne d'arc british school
+            </h2>
+          </div>
+
+          <p className="mt-4 md:text-lg leading-6 text-footer font-monstserrat font-medium">
+            Jeanne D'Arc British School are proud to say that we recruit
+            teaching stuff with a passion for lifelong learning and the desire
+            to share that passion with students, colleagues and the community.
+            Our teaching staff come to us from a wide range of countries and
+            boast between them a vast range of skills and experiences.
+          </p>
+        </div>
+        <div className="mt-12">
+          <form className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8 mx-4 lg:mx-20">
+            <div className="sm:col-span-1">
+              <label
+                htmlFor="name"
+                className="block text-lg font-medium font-monstserrat text-title"
+              >
+                Name
+              </label>
+              <div className="mt-1">
+                <input
+                  name="name"
+                  type="text"
+                  id="name"
+                  autoComplete="organization"
+                  required
+                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-300"
+                />
+              </div>
+            </div>
+            <div className="sm:col-span-1">
+              <label
+                htmlFor="email"
+                className="block text-lg font-medium font-monstserrat text-title"
+              >
+                Email
+              </label>
+              <div className="mt-1">
+                <input
+                  name="email"
+                  id="email"
+                  required
+                  type="email"
+                  autoComplete="email"
+                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-300"
+                />
+              </div>
+            </div>{" "}
+            <div className="sm:col-span-1">
+              <label
+                htmlFor="phone"
+                className="block text-lg font-medium font-monstserrat text-title"
+              >
+                Phone
+              </label>
+              <div className="mt-1">
+                <input
+                  name="phone"
+                  type="text"
+                  id="phone"
+                  autoComplete="phone"
+                  required
+                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-300"
+                />
+              </div>
+            </div>
+            <div className="sm:col-span-1">
+              <label
+                htmlFor="position"
+                className="block text-lg font-medium font-monstserrat text-title"
+              >
+                Position
+              </label>
+              <div className="mt-1">
+                <input
+                  name="Position"
+                  id="Position"
+                  required
+                  type="Position"
+                  autoComplete="Position"
+                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-300"
+                />
+              </div>
+            </div>
+            <div className="sm:col-span-1">
+              <label
+                htmlFor="resume"
+                className="block text-lg font-medium font-monstserrat text-title"
+              >
+                Upload resume
+                <div className="flex flex-col items-center justify-center border-gray-300 w-full rounded-md py-3 px-4 bg-slate-400">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-8 h-8 mb-2 text-gray-100"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="17 8 12 3 7 8" />
+                    <line x1="12" x2="12" y1="3" y2="15" />
+                  </svg>
+
+                  <p className="font-monstserrat text-sm text-gray-100 font-medium">
+                    Upload a file
+                  </p>
+                  <input type="file" id="resume" className="hidden" />
+                </div>
+              </label>
+            </div>
+            <div className="sm:col-span-1">
+              <label
+                htmlFor="resume"
+                className="block text-lg font-medium font-monstserrat text-title"
+              >
+                Any Other Documents to Upload
+                <div className="flex flex-col items-center justify-center border-gray-300 w-full rounded-md py-3 px-4 bg-slate-400">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-8 h-8 mb-2 text-gray-100"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="17 8 12 3 7 8" />
+                    <line x1="12" x2="12" y1="3" y2="15" />
+                  </svg>
+
+                  <p className="font-monstserrat text-sm text-gray-100 font-medium">
+                    Upload a file
+                  </p>
+                  <input type="file" id="resume" className="hidden" />
+                </div>
+              </label>
+            </div>
+            <div className="flex justify-start sm:col-span-2">
+              <button
+                type="submit"
+                className="inline-flex items-center rounded-md px-4 py-2 font-medium focus:outline-none font-monstserrat sm:text-lg text-white bg-[#cc1522]"
+              >
+                Apply
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+};
