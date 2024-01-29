@@ -46,7 +46,7 @@ export const AdmissionForm = () => {
                   id="name"
                   autoComplete="organization"
                   required
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-300"
+                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-400"
                 />
               </div>
             </div>
@@ -64,7 +64,7 @@ export const AdmissionForm = () => {
                   required
                   type="email"
                   autoComplete="email"
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-300"
+                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-400"
                 />
               </div>
             </div>{" "}
@@ -82,7 +82,7 @@ export const AdmissionForm = () => {
                   id="phone"
                   autoComplete="phone"
                   required
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-300"
+                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-400"
                 />
               </div>
             </div>
@@ -100,7 +100,7 @@ export const AdmissionForm = () => {
                   required
                   type="Position"
                   autoComplete="Position"
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-300"
+                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-400"
                 />
               </div>
             </div>

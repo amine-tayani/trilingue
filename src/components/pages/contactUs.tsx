@@ -44,7 +44,7 @@ export const ContactForm = () => {
                   type="text"
                   id="name"
                   required
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-300"
+                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-400"
                 />
               </div>
             </div>
@@ -60,7 +60,7 @@ export const ContactForm = () => {
                   id="subject"
                   required
                   type="text"
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-300"
+                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-400"
                 />
               </div>
             </div>{" "}
@@ -78,7 +78,7 @@ export const ContactForm = () => {
                   required
                   type="email"
                   autoComplete="email"
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-300"
+                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-400"
                 />
               </div>
             </div>
@@ -96,7 +96,7 @@ export const ContactForm = () => {
                   id="phone"
                   autoComplete="phone"
                   required
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-300"
+                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-400"
                 />
               </div>
             </div>
@@ -113,7 +113,7 @@ export const ContactForm = () => {
                   name="message"
                   id="message"
                   rows={4}
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-300"
+                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-400"
                 />
               </div>
             </div>
