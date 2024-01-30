@@ -10,11 +10,11 @@ const Charte = () => {
           <img alt="right" src="/src/assets/right-vect.svg" />
         </div>
 
-        <div className="relative grid place-content-center w-full lg:h-[900px]">
+        <div className="relative grid place-content-center w-full">
           <img
             alt="image"
             src="/src/assets/pattern.jpg"
-            className="object-center object-scale-down"
+            className="object-center"
           />
           <div className="absolute lg:top-40 top-0 inset-x-0 lg:p-8 text-title">
             <div className="flex flex-row justify-around mt-20 font-monstserrat font-medium text-center text-balance">
