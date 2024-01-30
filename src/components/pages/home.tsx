@@ -1,7 +1,7 @@
 import Enseignement from "../sections/Enseignement";
 import Footer from "../sections/Footer";
 import Hero from "../sections/Hero";
-import MaCharte from "../sections/MaCharte";
+import Charte from "../sections/Charte";
 import MotDeDirecteur from "../sections/Directeur/MotDirecteur";
 import Navbar from "../shared/Navbar";
 import NosCycles from "../sections/NosCycles";
@@ -14,7 +14,7 @@ const Homepage = () => {
       <Navbar />
       <Hero />
       <MotDeDirecteur />
-      <MaCharte />
+      <Charte />
       <Enseignement />
       <Raisons />
       <NosCycles />
