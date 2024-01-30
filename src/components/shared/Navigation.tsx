@@ -92,9 +92,10 @@ export function Navigation() {
                     to={item.path}
                     className={({ isActive }) =>
                       cn(
-                        "block py-2 pr-4 pl-3 rounded text-footer lg:p-0 font-medium",
+                        "block py-2 pr-4 pl-3 rounded text-footer lg:p-0.5 font-medium",
                         {
-                          "bg-[#cc1522] rounded-lg text-neutral-100": isActive,
+                          "bg-[#cc1522] rounded-lg text-neutral-100 lg:py-0.5 lg:px-1.5":
+                            isActive,
                         }
                       )
                     }

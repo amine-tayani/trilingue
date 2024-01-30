@@ -22,7 +22,7 @@ export const AdmissionForm = () => {
             </h2>
           </div>
 
-          <p className="mt-4 md:text-lg leading-6 text-footer font-monstserrat font-medium">
+          <p className="mt-4 md:text-lg leading-6 text-title font-monstserrat font-semibold">
             Jeanne D'Arc British School are proud to say that we recruit
             teaching stuff with a passion for lifelong learning and the desire
             to share that passion with students, colleagues and the community.
@@ -46,7 +46,7 @@ export const AdmissionForm = () => {
                   id="name"
                   autoComplete="organization"
                   required
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-400"
+                  className="border-gray-300 block w-full py-3 px-4 shadow-sm bg-slate-400"
                 />
               </div>
             </div>
@@ -64,7 +64,7 @@ export const AdmissionForm = () => {
                   required
                   type="email"
                   autoComplete="email"
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-400"
+                  className="border-gray-300 block w-full py-3 px-4 shadow-sm bg-slate-400"
                 />
               </div>
             </div>{" "}
@@ -82,7 +82,7 @@ export const AdmissionForm = () => {
                   id="phone"
                   autoComplete="phone"
                   required
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-400"
+                  className="border-gray-300 block w-full py-3 px-4 shadow-sm bg-slate-400"
                 />
               </div>
             </div>
@@ -100,7 +100,7 @@ export const AdmissionForm = () => {
                   required
                   type="Position"
                   autoComplete="Position"
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm bg-slate-400"
+                  className="border-gray-300 block w-full py-3 px-4 shadow-sm bg-slate-400"
                 />
               </div>
             </div>
@@ -110,7 +110,7 @@ export const AdmissionForm = () => {
                 className="block text-lg font-medium font-monstserrat text-title"
               >
                 Upload resume
-                <div className="flex flex-col items-center justify-center border-gray-300 w-full rounded-md py-3 px-4 bg-slate-400">
+                <div className="flex flex-col items-center justify-center border-gray-300 w-full py-3 px-4 bg-slate-400">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -139,7 +139,7 @@ export const AdmissionForm = () => {
                 className="block text-lg font-medium font-monstserrat text-title"
               >
                 Any Other Documents to Upload
-                <div className="flex flex-col items-center justify-center border-gray-300 w-full rounded-md py-3 px-4 bg-slate-400">
+                <div className="flex flex-col items-center justify-center border-gray-300 w-full py-3 px-4 bg-slate-400">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -165,7 +165,7 @@ export const AdmissionForm = () => {
             <div className="flex justify-start sm:col-span-2">
               <button
                 type="submit"
-                className="inline-flex items-center rounded-md px-4 py-2 font-medium focus:outline-none font-monstserrat sm:text-lg text-white bg-[#cc1522]"
+                className="inline-flex items-center px-10 py-2 font-medium focus:outline-none font-monstserrat sm:text-lg text-white bg-[#cc1522]"
               >
                 Apply
               </button>

@@ -19,15 +19,15 @@ export const ContactForm = () => {
           <h2 className="text-3xl uppercase font-medium font-oswald text-[#cc1522] sm:text-6xl">
             Contact Us
           </h2>
-          <p className="mt-4 text-lg leading-6 text-footer font-monstserrat font-medium">
-            <span className="font-semibold text-xl lg:leading-9">
+          <p className="mt-4 text-sm md:text-lg leading-6 text-footer font-monstserrat font-medium">
+            <span className="font-bold text-sm md:text-xl lg:leading-9">
               TEXT YOUR QUESTION DIRECTLY TO OUR ADMISSIONS TEAM
             </span>
             <br />
             Whether you're looking for answers, would like to solve a problem,
-            or just want to let us know how we did, you'll find many ways to
-            contact us right here. We'll help you resolve your issues quickly
-            and easily.
+            or just want to let us know how we did, you'll find many ways
+            <br className="hidden md:block" /> to contact us right here. We'll
+            help you resolve your issues quickly and easily.
           </p>
         </div>
         <div className="mt-12">
@@ -44,7 +44,7 @@ export const ContactForm = () => {
                   type="text"
                   id="name"
                   required
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-400"
+                  className="border-gray-300 block w-full py-3 px-4 bg-slate-400"
                 />
               </div>
             </div>
@@ -60,7 +60,7 @@ export const ContactForm = () => {
                   id="subject"
                   required
                   type="text"
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-400"
+                  className="border-gray-300 block w-full py-3 px-4 bg-slate-400"
                 />
               </div>
             </div>{" "}
@@ -78,7 +78,7 @@ export const ContactForm = () => {
                   required
                   type="email"
                   autoComplete="email"
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-400"
+                  className="border-gray-300 block w-full py-3 px-4 bg-slate-400"
                 />
               </div>
             </div>
@@ -96,7 +96,7 @@ export const ContactForm = () => {
                   id="phone"
                   autoComplete="phone"
                   required
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-400"
+                  className="border-gray-300 block w-full py-3 px-4 bg-slate-400"
                 />
               </div>
             </div>
@@ -112,15 +112,15 @@ export const ContactForm = () => {
                   required
                   name="message"
                   id="message"
-                  rows={4}
-                  className="border-gray-300 block w-full rounded-md py-3 px-4 bg-slate-400"
+                  rows={7}
+                  className="border-gray-300 block w-full py-3 px-4 bg-slate-400"
                 />
               </div>
             </div>
             <div className="flex justify-start sm:col-span-2">
               <button
                 type="submit"
-                className="inline-flex items-center rounded-md px-4 py-2 font-medium focus:outline-none font-monstserrat sm:text-lg text-white bg-[#cc1522]"
+                className="inline-flex items-center px-10 py-2 font-medium focus:outline-none font-monstserrat sm:text-lg text-white bg-[#cc1522]"
               >
                 Send
               </button>
