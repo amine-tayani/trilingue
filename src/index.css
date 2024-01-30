@@ -26,4 +26,14 @@
     top: 350px;
     right: 180px;
   }
+
+  .item-has-image:hover div {
+    background-color: unset;
+  }
+  .item-has-image img {
+    mix-blend-mode: soft-light;
+  }
+  .item-has-image:hover img {
+    mix-blend-mode: unset;
+  }
 }

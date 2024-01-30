@@ -9,62 +9,55 @@ const NosCycles = () => {
           </h1>
           <img alt="right" src="/src/assets/right-vect.svg" />
         </div>
-        <div className="flex flex-wrap -m-4 font-monstserrat">
-          <div className=" lg:w-1/4 md:w-1/2 bg-gradient-to-b from-gray-600 to-slate-400 ">
-            <div className="relative flex flex-col items-center text-center mix-blend-overlay">
-              <img
-                alt="right"
-                className="w-full h-full object-cover object-center"
-                src="/src/assets/faces/2S3A0926.png"
-              />
-              <div className="w-full absolute bottom-10 p-4">
-                <h2 className="font-bold text-left text-5xl text-white">
-                  Crèche Maternelle
-                </h2>
-              </div>
+        <div className="lg:-m-6 mt-2 mb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 font-monstserrat">
+          <div className="relative cursor-pointer item-has-image">
+            <div className="absolute w-full h-full bg-[rgba(8,98,56,0.57)]">
+              <h2 className="font-bold absolute bottom-0 mb-8 ml-4 text-left text-5xl text-white">
+                Crèche Maternelle
+              </h2>
             </div>
+            <img
+              alt="image-1"
+              className="object-cover w-full h-full mix-blend-soft-light "
+              src="/src/assets/faces/2S3A0926.png"
+            />
           </div>
-          <div className=" lg:w-1/4 md:w-1/2 ">
-            <div className="relative flex flex-col items-center text-center">
-              <img
-                alt="right"
-                className="w-full h-full object-cover object-center"
-                src="/src/assets/faces/2S3A0939.png"
-              />
-              <div className="w-full absolute bottom-10 p-4">
-                <h2 className="font-bold text-left text-5xl text-white">
-                  Primaire
-                </h2>
-              </div>
+
+          <div className="relative cursor-pointer item-has-image">
+            <div className="absolute w-full h-full bg-[rgb(137,38,45,0.57)]">
+              <h2 className="font-bold absolute bottom-0 mb-8 ml-4 text-left text-5xl text-white">
+                Primaire
+              </h2>
             </div>
+            <img
+              alt="image-2"
+              className="object-cover w-full h-full mix-blend-soft-light"
+              src="/src/assets/faces/2S3A0939.png"
+            />
           </div>
-          <div className=" lg:w-1/4 md:w-1/2 bg-gradient-to-b from-gray-600 to-slate-400 ">
-            <div className="relative flex flex-col items-center text-center mix-blend-overlay">
-              <img
-                alt="right"
-                className="w-full h-full object-cover object-center"
-                src="/src/assets/faces/3124323.png"
-              />
-              <div className="w-full absolute bottom-10 p-4">
-                <h2 className="font-bold text-left text-5xl text-white">
-                  Collège
-                </h2>
-              </div>
+          <div className="relative cursor-pointer item-has-image">
+            <div className="absolute w-full h-full bg-[rgb(14,107,135,0.57)]">
+              <h2 className="font-bold absolute bottom-0 mb-8 ml-4 text-left text-5xl text-white">
+                Collège
+              </h2>
             </div>
+            <img
+              alt="image-3"
+              className="object-cover w-full h-full mix-blend-soft-light "
+              src="/src/assets/faces/3124323.png"
+            />
           </div>
-          <div className=" lg:w-1/4 md:w-1/2 bg-gradient-to-b from-gray-600 to-slate-400 ">
-            <div className="relative flex flex-col items-center text-center mix-blend-overlay">
-              <img
-                alt="right"
-                className="w-full h-full object-cover object-center"
-                src="/src/assets/faces/2S3A0827.png"
-              />
-              <div className="w-full absolute bottom-10 p-4">
-                <h2 className="font-bold text-left text-5xl text-white">
-                  Lycée
-                </h2>
-              </div>
+          <div className="relative cursor-pointer item-has-image">
+            <div className="absolute w-full h-full bg-[rgb(67,36,129,0.57)] ">
+              <h2 className="font-bold absolute bottom-0 mb-8 ml-4 text-left text-5xl text-white">
+                Lycée
+              </h2>
             </div>
+            <img
+              alt="image-4"
+              className="object-cover w-full h-full mix-blend-soft-light"
+              src="/src/assets/faces/2S3A0827.png"
+            />
           </div>
         </div>
       </div>
