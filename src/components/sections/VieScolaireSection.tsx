@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { cn } from "../../utils/cn";
 
 const responsive = {
   desktop: {
@@ -23,53 +24,87 @@ const images = [
   {
     url: "/src/assets/faces/cal-1.png",
     alt: "cal-1",
-    title: "Activités sportives",
+    title: (
+      <>
+        <span className="text-title">A</span>ctivités{" "}
+        <span className="text-title">S</span>portives
+      </>
+    ),
   },
   {
     url: "/src/assets/faces/cal-2.png",
     alt: "cal-2",
-    title: "Activités Culturels",
+    title: (
+      <>
+        <span className="text-title">A</span>ctivités{" "}
+        <span className="text-title">C</span>ulturels
+      </>
+    ),
   },
   {
     url: "/src/assets/faces/cal-3.png",
     alt: "cal-3",
-    title: "Activités Extrascolaires",
+    title: (
+      <>
+        <span className="text-title">A</span>ctivités{" "}
+        <span className="text-title">E</span>xtrascolaires
+      </>
+    ),
   },
   {
     url: "/src/assets/faces/cal-4.png",
     alt: "cal-4",
-    title: "Activités Sociales",
+    title: (
+      <>
+        <span className="text-title">A</span>ctivités{" "}
+        <span className="text-title">S</span>ociales
+      </>
+    ),
   },
   {
     url: "/src/assets/faces/cal-5.png",
     alt: "cal-5",
-    title: "Sorties scolaires",
+    title: (
+      <>
+        <span className="text-title">S</span>orties{" "}
+        <span className="text-title">S</span>colaires
+      </>
+    ),
   },
   {
     url: "/src/assets/faces/cal-6.png",
     alt: "cal-6",
-    title: "Voyage A L'Etranger",
+    title: (
+      <>
+        <span className="text-title">V</span>oyage A{" "}
+        <span className="text-title">L'</span>Etranger
+      </>
+    ),
   },
   {
     url: "/src/assets/faces/cal-7.png",
     alt: "cal-7",
-    title: "Summer Camp",
+    title: (
+      <>
+        <span className="text-title">S</span>ummer{" "}
+        <span className="text-title">C</span>amp
+      </>
+    ),
   },
   {
     url: "/src/assets/faces/cal-8.png",
     alt: "cal-8",
-    title: "ROBOTIQUE",
+    title: (
+      <>
+        <span className="text-title">R</span>OBOTIQUE
+      </>
+    ),
   },
 ];
 
 const VieScolaireSection = () => {
   return (
-    <section className="mb-20 mt-7">
-      <div className="relative w-full h-20  bg-[rgb(227,185,33)] flex items-center justify-around mb-10">
-        <h1 className="font-monstserrat text-white text-2xl font-bold tracking-wide sm:text-3xl md:text-4xl lg:text-5xl">
-          VIE SCOLAIRE
-        </h1>
-      </div>
+    <section className="mb-10 mt-7">
       <Carousel
         responsive={responsive}
         autoPlay={true}
@@ -92,7 +127,11 @@ const VieScolaireSection = () => {
                 className=" object-cover object-center"
               />
               <div className="w-full z-50 absolute bottom-10 p-4">
-                <h2 className="font-semibold text-left text-5xl text-white font-lemonmilk uppercase">
+                <h2
+                  className={cn(
+                    "font-semibold text-white text-left text-5xl font-lemonmilk uppercase"
+                  )}
+                >
                   {image.title}
                 </h2>
               </div>

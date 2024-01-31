@@ -29,10 +29,11 @@ const Enseignement = () => {
               <p className="md:text-md lg:text-xl text-[#00204d] font-montserrat">
                 L’enseignement trilingue adopté par notre établissement aide nos
                 élèves à développer une meilleure sensibilité communicative dans
-                un environnement plurilingue et multiculturel. Jeanne D’Arc
-                Trilingue School a toujours veillé à inculqué à ses apprenants,
-                l’adhésion aux valeurs universelles et cultive en eux l’art de
-                la cohabitation avec les citoyens du monde.
+                un environnement plurilingue et multiculturel.
+                <br /> Jeanne D’Arc Trilingue School a toujours veillé à
+                inculqué à ses apprenants, l’adhésion aux valeurs universelles
+                et cultive en eux l’art de la cohabitation avec les citoyens du
+                monde.
               </p>
             </div>
           </div>
